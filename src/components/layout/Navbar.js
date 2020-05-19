@@ -10,8 +10,8 @@ export default class Navbar extends Component {
   };
 
   static propTypes = {
-    title: PropTypes.string.isRequired(),
-    icon: PropTypes.string.isRequired(),
+    title: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
   };
 
   render() {
