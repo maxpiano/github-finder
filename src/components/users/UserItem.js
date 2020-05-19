@@ -1,6 +1,7 @@
 // vim: ft=javascriptreact
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const UserItem = ({ user: { avatar_url, login, html_url } }) => {
   return (
@@ -24,6 +25,10 @@ const UserItem = ({ user: { avatar_url, login, html_url } }) => {
       </div>
     </div>
   );
+};
+
+UserItem.propTypes = {
+  user: PropTypes.object.isRequired,
 };
 
 export default UserItem;
