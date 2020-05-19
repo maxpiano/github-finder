@@ -1,1 +1,1 @@
-# simple react app integrating with github API
+### simple react app integrating with github API
