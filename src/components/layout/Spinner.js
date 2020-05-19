@@ -10,7 +10,7 @@ const Spinner = () => (
       alt="Loading..."
       style={{
         width: '200px',
-        margin: 'autio',
+        margin: 'auto',
         display: 'block',
       }}
     />
