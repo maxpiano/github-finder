@@ -1,26 +1,26 @@
 // vim: ft=javascriptreact
 
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class Navbar extends Component {
-  static defaultProps = {
-    title: "Github Finder",
-    icon: "fab fa-github",
-  };
+const Navbar = (props) => {
+  return (
+    <nav className="navbar bg-primary">
+      <h1>
+        <div className={props.icon}></div> {props.title}
+      </h1>
+    </nav>
+  );
+};
 
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
-  };
+Navbar.defaultProps = {
+  title: 'Github Finder',
+  icon: 'fab fa-github',
+};
 
-  render() {
-    return (
-      <nav className="navbar bg-primary">
-        <h1>
-          <div className={this.props.icon}></div> {this.props.title}
-        </h1>
-      </nav>
-    );
-  }
-}
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+};
+
+export default Navbar;
