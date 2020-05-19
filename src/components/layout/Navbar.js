@@ -3,11 +3,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Navbar = (props) => {
+const Navbar = ({ icon, title }) => {
   return (
     <nav className="navbar bg-primary">
       <h1>
-        <div className={props.icon}></div> {props.title}
+        <div className={icon}></div> {title}
       </h1>
     </nav>
   );
