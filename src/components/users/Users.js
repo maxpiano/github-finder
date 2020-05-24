@@ -1,5 +1,4 @@
 // vim: ft=javascriptreact
-
 import React from 'react';
 import UserItem from './UserItem';
 import Spinner from '../layout/Spinner';
