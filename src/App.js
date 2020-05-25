@@ -43,10 +43,12 @@ class App extends Component {
 
   render() {
     const { loading, user, users } = this.state;
+
     return (
       <Router>
         <div className="App">
           <Navbar />
+
           <div className="container">
             <Alert alert={this.state.alert} />
             <Switch>
@@ -65,7 +67,9 @@ class App extends Component {
                   </Fragment>
                 )}
               />
+
               <Route exact path="/about" component={About} />
+
               <Route
                 exact
                 path="/user/:login"
