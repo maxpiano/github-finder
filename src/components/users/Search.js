@@ -1,5 +1,5 @@
 // vim: ft=javascriptreact
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 const Search = ({ searchUsers, clearUsers, showClear, setAlert }) => {
@@ -18,7 +18,7 @@ const Search = ({ searchUsers, clearUsers, showClear, setAlert }) => {
   };
 
   return (
-    <div>
+    <Fragment>
       <form onSubmit={onSubmit} className="form">
         <input
           type="text"
@@ -38,7 +38,7 @@ const Search = ({ searchUsers, clearUsers, showClear, setAlert }) => {
           Clear
         </button>
       )}
-    </div>
+    </Fragment>
   );
 };
 
