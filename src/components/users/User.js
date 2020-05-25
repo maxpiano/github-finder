@@ -1,6 +1,7 @@
 // vim: ft=javascriptreact
 import React, { Component, Fragment } from 'react';
 import Spinner from '../layout/Spinner';
+import Repos from '../repos/Repos';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +15,7 @@ export default class User extends Component {
     loading: PropTypes.bool,
     user: PropTypes.object.isRequired,
     getUser: PropTypes.func.isRequired,
+    repos: PropTypes.array.isRequired,
     getUserRepos: PropTypes.func.isRequired,
   };
 
@@ -33,7 +35,7 @@ export default class User extends Component {
       hireable,
       company,
     } = this.props.user;
-    const { loading } = this.props;
+    const { repos, loading } = this.props;
 
     if (loading) return <Spinner />;
     return (
@@ -99,6 +101,7 @@ export default class User extends Component {
           <div className="badge badge-light">Public Repos: {public_repos}</div>
           <div className="badge badge-dark">Public Gists: {public_gists}</div>
         </div>
+        <Repos repos={repos} />
       </Fragment>
     );
   }
