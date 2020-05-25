@@ -1,3 +1,4 @@
+// vim: ft=javascriptreact
 import { createContext } from 'react';
 
 const githubContext = createContext();
