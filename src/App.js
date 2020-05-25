@@ -14,9 +14,9 @@ class App extends Component {
   state = {
     users: [],
     user: {},
+    repos: [],
     loading: false,
     alert: null,
-    repos: [],
   };
 
   searchUsers = async (text) => {
@@ -51,7 +51,7 @@ class App extends Component {
   };
 
   render() {
-    const { loading, user, users } = this.state;
+    const { loading, user, users, repos } = this.state;
 
     return (
       <Router>
@@ -86,6 +86,8 @@ class App extends Component {
                     {...props}
                     getUser={this.getUser}
                     user={user}
+                    getUserRepos={this.getUserRepos}
+                    repos={repos}
                     loading={loading}
                   />
                 )}
