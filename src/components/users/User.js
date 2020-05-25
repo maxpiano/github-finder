@@ -52,6 +52,16 @@ export default class User extends Component {
               className="round-img"
               style={{ width: '150px' }}
             />
+            <h1>{name}</h1>
+            <p>Location: {location}</p>
+          </div>
+          <div>
+            {bio && (
+              <Fragment>
+                <h3>Bio</h3>
+                <p>{bio}</p>
+              </Fragment>
+            )}
           </div>
         </div>
       </Fragment>
