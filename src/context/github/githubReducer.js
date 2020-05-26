@@ -13,15 +13,13 @@ export default (state, action) => {
       return {
         ...state,
         users: action.payload,
-        loading: true,
+        loading: false,
       };
     case SET_LOADING:
       return {
         ...state,
         loading: true,
       };
-
-      break;
 
     default:
       return state;
