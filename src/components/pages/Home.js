@@ -1,9 +1,9 @@
 // vim: ft=javascriptreact
 import React, { Fragment } from 'react';
-import Users from '../../components/users/Users';
-import Search from '../../components/users/Search';
+import Users from '../users/Users';
+import Search from '../users/Search';
 
-const About = () => {
+const Home = () => {
   return (
     <Fragment>
       <Search />
@@ -12,4 +12,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Home;
