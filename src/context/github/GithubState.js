@@ -57,7 +57,7 @@ const GithubState = (props) => {
   const getUserRepos = async (username) => {
     setLoading();
     const res = await axios.get(
-      `https://api.github.com/users/${username}/repos?per_page=5&sort=created:acs&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+      `https://api.github.com/users/${username}/repos?per_page=5&sort=created:acs&client_id=${githubClientId}&client_secret=${githubClientSecret}`
     );
     dispatch({
       type: GET_REPOS,
