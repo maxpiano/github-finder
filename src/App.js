@@ -10,6 +10,7 @@ import Alert from './components/layout/Alert';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import User from './components/users/User';
+import NotFound from './components/pages/NotFound';
 
 const App = () => {
   return (
