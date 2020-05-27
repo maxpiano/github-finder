@@ -6,11 +6,10 @@ import AlertState from './context/alert/AlertState';
 import './App.css';
 
 import Navbar from './components/layout/Navbar';
-import Users from './components/users/Users';
-import User from './components/users/User';
-import Search from './components/users/Search';
 import Alert from './components/layout/Alert';
+import Home from './components/pages/Home';
 import About from './components/pages/About';
+import User from './components/users/User';
 
 const App = () => {
   return (
@@ -22,16 +21,17 @@ const App = () => {
             <div className="container">
               <Alert />
               <Switch>
-                <Route
-                  exact
-                  path="/"
-                  render={() => (
-                    <Fragment>
-                      <Search />
-                      <Users />
-                    </Fragment>
-                  )}
-                />
+                {/* <Route */}
+                {/*   exact */}
+                {/*   path="/" */}
+                {/*   render={() => ( */}
+                {/*     <Fragment> */}
+                {/*       <Search /> */}
+                {/*       <Users /> */}
+                {/*     </Fragment> */}
+                {/*   )} */}
+                {/* /> */}
+                <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/user/:login" component={User} />
               </Switch>
