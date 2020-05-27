@@ -1,5 +1,5 @@
 // vim: ft=javascriptreact
-import React, { Fragment } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import GithubState from './context/github/GithubState';
 import AlertState from './context/alert/AlertState';
