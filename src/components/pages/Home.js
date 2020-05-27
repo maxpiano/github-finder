@@ -1,7 +1,7 @@
 // vim: ft=javascriptreact
 import React, { Fragment } from 'react';
-import Users from './components/users/Users';
-import Search from './components/users/Search';
+import Users from '../../components/users/Users';
+import Search from '../../components/users/Search';
 
 const About = () => {
   return (
